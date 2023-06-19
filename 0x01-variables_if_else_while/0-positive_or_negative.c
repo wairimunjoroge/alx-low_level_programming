@@ -3,7 +3,14 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */ 
+/* betty style doc for function main goes there */
+
+/**
+ * main - Entry point of the program
+ * print value of a status:zero, positive, or negative
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
 	int n;
@@ -12,14 +19,16 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	printf("The number: %d\n", n);
-       
-	if (n > 0) {
+	
+	if (n > 0)
 		printf("is positive\n");
-	} else if(n == 0) {
+	else if (n == 0)
+	{
 		printf("is zero\n");
-	} else {
-		printf("is negative\n" );
+	} else
+	{
+		printf("is negative\n");
 	}
-	return 0;
+	return (0);
 }
 

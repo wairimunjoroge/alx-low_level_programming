@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
  * return: 0 on success
  */
@@ -12,5 +12,6 @@ int main(void)
 	for (letter = 'z'; letter >= 'a'; letter--)
 		putchar(letter);
 	putchar('\n');
+
 	return (0);
 }

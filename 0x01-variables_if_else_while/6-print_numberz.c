@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	char integer;
+	int integer;
 
-	for (integer = '0'; integer <= '9'; integer++)
+	for (integer = 0; integer <= 9; integer++)
 		putchar(integer);
 	putchar('\n');
 	return (0);

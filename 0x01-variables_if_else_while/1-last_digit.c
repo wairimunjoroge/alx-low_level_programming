@@ -9,7 +9,7 @@
  * print the last digit of the number stored in the variable n
  * *
  * Return: 0 on success
- * */
+ */
 int main(void)
 {
 	int n;

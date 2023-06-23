@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * more_numbers - print numbers from 0 t0 14
+ * more_numbers - prints numbers from 0 to 14
  */
 void more_numbers(void)
 {
-	int i, j;
+	int i , j;
 
 	for (i = 1; i <= 10; i++)
 	{
-		for (j = 1; j <= 10; j++)
+		for (j = 1; j <= 14; j++)
 		{
-			if (j <= 9)
+			if (j < 10)
 			{
 				_putchar(j + '0');
 			}
@@ -19,8 +19,8 @@ void more_numbers(void)
 			{
 				_putchar((j / 10) + '0');
 				_putchar((j % 10) + '0');
-		}
-		_putchar('\n');
+			}
+			_putchar('\n');
 		}
 	}
 }

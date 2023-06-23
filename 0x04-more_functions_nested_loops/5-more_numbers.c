@@ -1,30 +1,26 @@
 #include "main.h"
 
 /**
- * more_numbers - prints more numbers on new lines
+ * more_numbers - print numbers from 0 t0 14
  */
 void more_numbers(void)
 {
-	int rows = 0;
+	int i, j;
 
-	while (rows < 10)
+	for (i = 1; i <= 10; i++)
 	{
-		int x = 0;
-
-		while (x <= 14)
+		for (j = 1; j <= 10; j++)
 		{
-			if (x > 9)
+			if (j <= 9)
 			{
-				_putchar((x / 10) + '0');
-				_putchar((x % 10) + '0');
+				_putchar(j + '0');
 			}
-			else
+			if (j > 9)
 			{
-				_putchar(x + '0');
-			}
-			x++;
+				_putchar((j / 10) + '0');
+				_putchar((j % 10) + '0');
 		}
 		_putchar('\n');
-		rows++;
+		}
 	}
 }

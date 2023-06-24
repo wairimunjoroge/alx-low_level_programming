@@ -5,26 +5,14 @@
  */
 void more_numbers(void)
 {
-	int rows = 0;
+	int i, j;
 
-	while (rows < 10)
+	for (i = 0; i < 10; i++)
 	{
-		int i = 0;
-
-		while (i <= 14)
+		for (j = 0; j <= 14; j++)
 		{
-			if (i > 9)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-			else
-			{
-				_putchar(i + '0');
-			}
-			i++;
+			_putchar(j);
 		}
 		_putchar('\n');
-		rows++;
 	}
 }

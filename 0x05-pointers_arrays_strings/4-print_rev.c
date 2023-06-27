@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <unistd.h>
 
 /**
  * print_rev - prints in reverse

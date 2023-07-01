@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
-  * _strncpy - copy string to another
-  * @dest: parameter 1
-  * @src: parameter 2
+  * _strncpy - copies one string to another
+  * @dest: 1st parameter
+  * @src: 2nd parameter
   * @n: limit
   *
   * Return: copied valued
   */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
+	int x = 0, y = 0;
 
-	while (src[j])
+	while (src[y])
 	{
-		j++;
+		y++;
 	}
 
-	while (i < n && sr[i])
+	while (x < n && src[x])
 	{
-		dest[i] = src[i];
-		i++;
+		dest[x] = src[x];
+		x++;
 	}
 
-	while (i < n)
+	while (x < n)
 	{
-		dest[a] = '\0';
-		i++;
+		dest[x] = '\0';
+		x++;
 	}
 
 	return (dest);
